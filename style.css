@@ -1,0 +1,76 @@
+/*Configuração geral*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    background-color:#f2f2f2;
+    color:#333;
+}
+/*Cabeçalho*/
+header{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+/*Menu de navegação*/
+nav{
+    background-color:#444;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+nav a:hover{
+    color:#00bcd4;
+}
+/*Área com barra lateral e conteúdo*/
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    min-height:400px;
+}
+/*Barra lateral*/
+aside{
+    width:25%;
+    background-color:#ddd;
+    padding:20px;
+    border-radius:5px;
+}
+/*Conteúdo principal*/
+main{
+    flex:1;
+    background-color:white;
+    padding:20px;
+    border-radius:5px;
+}
+/*Rodapé*/
+footer{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+/*Adaptação para celulares*/
+@media(max-width:600px){
+    .container{
+        flex-direction:column;
+    }
+    aside{
+        width:100%;
+    }
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+}
+
+

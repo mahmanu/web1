@@ -4,21 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=}, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*Configuração geral*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    background-color:#f2f2f2;
+    color:#333;
+}
+/*Cabeçalho*/
+header{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+/*Menu de navegação*/
+nav{
+    background-color:#444;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+nav a:hover{
+    color:#00bcd4;
+}
+/*Área com barra lateral e conteúdo*/
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    min-height:400px;
+}
+/*Barra lateral*/
+aside{
+    width:25%;
+    background-color:#ddd;
+    padding:20px;
+    border-radius:5px;
+}
+/*Conteúdo principal*/
+main{
+    flex:1;
+    background-color:white;
+    padding:20px;
+    border-radius:5px;
+}
+/*Rodapé*/
+footer{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+    }
+    </style> <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <title>Layout Estudo Dirigido</title>title>
+        <!--Vinculando o CSS Externo solicitado-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+        <header class="header-nav">
+            <h2>header/nav</h2>
+        </header>
+        <aside class="sidebar">
+            <h3>aside</h3>
+        </aside>
+    </main class="content">
+             <h3>main</h3>
+</main>
+    <footer class="footer">
+            <h2>footer</h2>
+        </footer>
 </head>
+<header>
 <h1>Inovação e Tecnologia para Impulsionar o seu Negócio</h1>
 <p>Transformamos ideias complexas em experiências digitais simples, funcionais e de alto impacto.<br>Conectamos sua marca ao futuro através de estratégias inteligentes, design moderno e desenvolvimento de ponta.</p>
-
+</header>
 <h2>Soluções Completas para o Crescimento da sua Empresa</h2>
 <p>Nossa equipe multidisciplinar está pronta para entender os seus desafios e entregar resultados mensuráveis.<br>Trabalhamos lado a lado com você para garantir eficiência, escalabilidade e vantagem competitiva no mercado.</p>
 
 <h2>O que nossos clientes dizem</h2>
 <p>"A parceria com esta equipe mudou completamente a nossa presença no digital e dobrou nossas vendas online em poucos meses."<br>— Carlos Eduardo, CEO da FastCom</p>
 <body>
+    
+    <header>
     <a href="contate-nos.html">Contato</a>
     <a href="parceiros.html">Parceiros</a>
     <a href="portifolio.html">Portfólio</a>
     <a href="produtos.html">Produtos</a>
     <a href="serviços.html">Serviços</a>
     <a href="sobre.html">Sobre</a>
+    </header>
 </body>
-</html>
+<footer>
+    <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+</footer>
