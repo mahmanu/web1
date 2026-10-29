@@ -1,5 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Meu Site</title>
+    <style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding:25px;
+}
+nav {
+    background-color: #444;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color: white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color:#00bcd4;
+}
+.container {
+    display:flex;
+    gap:20px;
+    padding:20px;
+    min-height: 400px;
+}
+aside {
+    width: 25%;
+    background-color: #ddd;
+}
+main {
+    flex:1;
+    background-color: antiquewhite;
+    padding:20px;
+    border-radius:5px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction:column;
+    }
+    aside {
+        width:100%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+<nav>
 <a href="index.html">Início</a>
+</nav>
 
+<main>
 <h1>Entre em contato conosco</h1>
 <p>Estamos prontos para ouvir suas ideias, responder suas dúvidas e ajudá-lo a transformar seus projetos em realidade.<br>Preencha o formulário abaixo ou utilize os nossos canais de atendimento para falar diretamente com a nossa equipe.</p>
 
@@ -30,3 +108,8 @@
     <td>(11) 97777-7777</td>
 </tr>
 </table>
+</main>
+    <footer>
+        <p>&copy; 2024 Meu Site.Todos os direitos reservados;</p>
+    </footer>
+</body>
