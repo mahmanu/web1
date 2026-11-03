@@ -1,4 +1,92 @@
-<a href="index.html">Início</a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Parceiros</title>
+    <style>
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding:25px;
+}
+nav {
+    background-color: #444;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color: white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color:#00bcd4;
+}
+.container {
+    display:flex;
+    gap:20px;
+    padding:20px;
+    min-height: 400px;
+    width: 100%;
+}
+aside {
+    width: 25%;
+    background-color: #ddd;
+}
+main {
+    flex:1;
+    background-color: antiquewhite;
+    padding:20;
+    border-radius:5px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction:column;
+    }
+    aside {
+        width:100%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Portfólio</h2>
+    </header>
+    <nav>
+    <a href="index.html">Início</a>
+    </nav>
+    <div class="container">
+        <aside>
+        <h3>Somos uma empresa LGBT</h3>
+        <p>Somos uma empresa orgulhosamente LGBTQIA+ que une excelência,inovação e impacto social.Transformamos o mercado através do respeito e da diversidade,entregando soluções de alto valor que refletem autenticidade e compromisso com um ambiente humanizado</p>
+    </aside>
+    <main>
 <h1>Histórias de Sucesso e Projetos Entregues</h1>
 <p>Explore alguns dos cases mais marcantes que desenvolvemos para clientes de diversos segmentos do mercado.<br>Cada projeto reflete a nossa paixão por superar expectativas e entregar resultados duradouros.</p>
 
@@ -7,3 +95,8 @@
 
 <h2>Pronto para Começar o seu Projeto?</h2>
 <p>Seja qual for a complexidade da sua ideia, nós temos a expertise técnica necessária para tirá-la do papel.<br>Vamos agendar uma conversa e desenhar juntos o futuro do seu negócio?</p>
+    </div>
+</main>
+<footer>
+        <p>&copy; 2024 Meu Site.Todos os direitos reservados;</p>
+    </footer>

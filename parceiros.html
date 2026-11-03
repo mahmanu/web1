@@ -6,52 +6,71 @@
     content="width=device-width, initial-scale=1.0">
     <title>Parceiros</title>
     <style>
-        body {
-            background-image: url(rrr.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-        }
-        nav {
-            background-color: #5f5e5e;
-            padding: 10px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        article {
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        footer {
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            background-position: fixed;
-            padding: 15px;
-        }
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding:25px;
+}
+nav {
+    background-color: #444;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color: white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color:#00bcd4;
+}
+.container {
+    display:flex;
+    gap:20px;
+    padding:20px;
+    min-height: 400px;
+}
+aside {
+    width: 25%;
+    background-color: #ddd;
+}
+main {
+    flex:1;
+    background-color: antiquewhite;
+    padding:20px;
+    border-radius:5px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction:column;
+    }
+    aside {
+        width:100%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
     </style>
 </head>
 
@@ -64,7 +83,7 @@
         <a href="index.html">Início</a>
     </nav>
     <main>
-        <section>
+        <section class="container">
             <h2>Quem Caminha ao Nosso Lado</h2>
            <article>
                 <table border="1">
@@ -93,7 +112,7 @@
 
             <p>Sua empresa compartilha da nossa visão de inovação e excelência?<br>Entre em contato conosco e descubra as vantagens de integrar a nossa rede de parcerias estratégicas.</p>
         </table>
-        <article>
+        </div>
         </section>
     </main>
 
