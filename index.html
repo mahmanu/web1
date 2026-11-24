@@ -65,6 +65,25 @@ footer {
     text-align:center;
     padding: 20px;
     margin-top: 20px;
+    .galeria {
+        text-align:center;
+        padding:20px;
+    }
+    .imagens {
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:15px;
+        margin:20px 0;
+    }
+    .imagens img {
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        border-radius:10px;
+        cursor:pointer;
+    }
+
+
 }
 @media (max-width: 600px) {
     .container {
@@ -124,21 +143,21 @@ footer {
         <section class="galeria">
             <h2>Nossa Galeria</h2>
             <div class="imagens">
-                <img src="images/bangchan.jpeg"
+                <img src="images (bangchan).jpeg"
                 onclick="sumir(this)">
-               <img src="images/lee know.jpeg" 
+               <img src="images (lee know).jpeg" 
                onclick="sumir(this)">
-               <img src="images/changbin.jpeg"
+               <img src="images (changbin).jpeg"
                onclick="sumir(this)">
-               <img src="images/hyunjin.jpeg"
+               <img src="images (hyunjin).jpeg"
                onclick="sumir(this)">
-               <img src="images/han.jpeg"
+               <img src="images (han).jpeg"
                onclick="sumir(this)">
-               <img src="images/felix.jpeg"
+               <img src="images (felix).jpeg"
                onclick="sumir(this)">
-               <img src="images/seungmin.jpeg"
+               <img src="images (seungmin).jpeg"
                onclick="sumir(this)">
-               <img src="images/IN.jpeg"
+               <img src="images (IN).jpeg"
                onclick="sumir(this)">
                </div>
                <button onclick="mostrarTodas()">Mostrar todas</button>
