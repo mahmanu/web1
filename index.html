@@ -43,9 +43,11 @@ nav a:hover {
 }
 aside {
     position: fixed;
-    top: 20px;
+    top: 145px;
     left: 20px;
     width: 22%;
+    height:calc(100vh- 165px);
+    overflow-y:auto;
     background-color: #ddd;
     padding: 20px;
     border-radius:5px;
@@ -119,6 +121,28 @@ footer {
         <p>Nossa equipe multidisciplinar está pronta para entender os seus desafios e entregar resultados mensuráveis.<br>Trabalhamos lado a lado com você para garantir eficiência, escalabilidade e vantagem competitiva no mercado.</p>
           <h2>Inovação e Tecnologia para Impulsionar o seu Negócio</h2>
         <p>Nossa equipe multidisciplinar está pronta para entender os seus desafios e entregar resultados mensuráveis.<br>Trabalhamos lado a lado com você para garantir eficiência, escalabilidade e vantagem competitiva no mercado.</p>
+        <section class="galeria">
+            <h2>Nossa Galeria</h2>
+            <div class="imagens">
+                <img src="images/bangchan.jpeg"
+                onclick="sumir(this)">
+               <img src="images/lee know.jpeg" 
+               onclick="sumir(this)">
+               <img src="images/changbin.jpeg"
+               onclick="sumir(this)">
+               <img src="images/hyunjin.jpeg"
+               onclick="sumir(this)">
+               <img src="images/han.jpeg"
+               onclick="sumir(this)">
+               <img src="images/felix.jpeg"
+               onclick="sumir(this)">
+               <img src="images/seungmin.jpeg"
+               onclick="sumir(this)">
+               <img src="images/IN.jpeg"
+               onclick="sumir(this)">
+               </div>
+               <button onclick="mostrarTodas()">Mostrar todas</button>
+               </section>
     </main>
 </div>
     <footer>
